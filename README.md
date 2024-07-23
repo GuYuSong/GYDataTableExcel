@@ -1,0 +1,2 @@
+# GYDataTableExcel
+GYDataTableExcel插件可以让我们一键把DataTable转化为Excel能编辑的.csv格式和.xlsx格式。同时也能从Excel格式转化为DataTable。 方便项目中策划配置DataTable。
