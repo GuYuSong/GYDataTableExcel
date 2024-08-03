@@ -1,4 +1,4 @@
-// Fill out your copyright notice in the Description page of Project Settings.
+// Copyright 2024 GY. All Rights Reserved.
 
 #pragma once
 
@@ -14,21 +14,21 @@ struct FGY_DataTableExcelStruct
 	//导出去的表的名字
 	//如果 Title = GY 那么导出的文件就是GY.csv和GY.xlsx
 	//不用加文件后缀
-	UPROPERTY(BlueprintReadWrite, EditAnywhere)
+	UPROPERTY(BlueprintReadWrite, EditAnywhere, Category = "DataTableExcelStruct")
 	FName Title;
 
 	//表的描述
-	UPROPERTY(BlueprintReadWrite, EditAnywhere)
+	UPROPERTY(BlueprintReadWrite, EditAnywhere, Category = "DataTableExcelStruct")
 	FString Describe;
 
 	//需要导入导出的表
-	UPROPERTY(BlueprintReadWrite, EditAnywhere)
+	UPROPERTY(BlueprintReadWrite, EditAnywhere, Category = "DataTableExcelStruct")
 	UDataTable* DataTable;
 
 	//文件导出路径，默认是.uproject为根
 	//如果 ExcelPath = GY/Test ,那么导出路径就是 项目.uproject/GY/Test
 	//路径推荐使用 /符号 来分割
-	UPROPERTY(BlueprintReadWrite, EditAnywhere)
+	UPROPERTY(BlueprintReadWrite, EditAnywhere, Category = "DataTableExcelStruct")
 	FString ExcelPath;
 
 };
@@ -44,7 +44,7 @@ class GYDATATABLEEXCEL_API UGYDataTableExcel_Data : public UObject
 
 public:
 
-	UPROPERTY(BlueprintReadWrite, EditAnywhere)
+	UPROPERTY(BlueprintReadWrite, EditAnywhere, Category = "DataTableExcel_Data")
 	TArray<FGY_DataTableExcelStruct> DataTableExcels;
 
 };

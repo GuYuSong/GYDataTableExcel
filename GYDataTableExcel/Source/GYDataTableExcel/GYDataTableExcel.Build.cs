@@ -1,4 +1,4 @@
-// Copyright Epic Games, Inc. All Rights Reserved.
+// Copyright 2024 GY. All Rights Reserved.
 
 using UnrealBuildTool;
 using System.IO;
@@ -15,7 +15,6 @@ public class GYDataTableExcel : ModuleRules
                 Path.Combine(ModuleDirectory, "Public/EditorUtilityWidget"),
                 Path.Combine(ModuleDirectory, "Public/Settings"),
                 Path.Combine(ModuleDirectory, "Public/Data"),
-                Path.Combine(ModuleDirectory, "Public/BlueprintFunctionLibrary"),
             }
             );
 				
